@@ -28,18 +28,11 @@ if (window.matchMedia("(max-width: 767px)").matches) {
 
 });
 
-const slides = document.querySelectorAll(".swiper-slide");
 const btn = document.querySelector(".arrow");
-const mediaQuery = window.matchMedia("(min-width: 1149px)");
-
-const container = document.querySelector(".swiper-wrapper");
-
-function openSlides() {
-    btn.classList.contains("active") ?  container.style.height = "auto" : container.style.height = "200px";
-}
+const container = document.querySelector(".swiper");
 
 btn.addEventListener("click", function() {
     btn.classList.toggle("active");
-    openSlides();
-    console.log(btn);
+    container.classList.toggle("swiper--active");
+
 });
