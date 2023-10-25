@@ -48,12 +48,12 @@ color: #6B5AF9;
 
 .swiper {
 max-height: 270px;
-transition: 1s ease-in-out;
+transition: 0.6s ease-in-out;
 }
 
 .swiper--active {
 max-height: 750px;
-transition: 1s ease-in-out;
+transition: 0.6s ease-in-out;
 }
 
 .swiper-wrapper {
@@ -130,12 +130,12 @@ border-bottom: 5px;
 border-top: 5px;
 border-radius: 5px;
 transform: rotate(0deg);
-transition: transform 0.3s linear;
+transition: transform 0.4s linear;
 }
 
 .active {
 transform: rotate(-180deg);
-transition: transform 0.3s linear;
+transition: transform 0.4s linear;
 }
 
 .arrow::before, 
